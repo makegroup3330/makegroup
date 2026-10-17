@@ -1,10 +1,11 @@
 # MAKE GROUP 운영 안내
 
 - 운영 홈페이지: https://makegroup.co.kr/
+- 기존 홈페이지 백업: https://makegroup3330.github.io/makegroup-backup/
 - 디자인 개선안 미리보기: https://makegroup.co.kr/preview/
 - 프로젝트 목록 미리보기: https://makegroup.co.kr/preview/projects.html
 
-운영 화면은 Wix 원본을 이전한 기존 버전입니다. 개선안은 `preview/`에서 따로 확인할 수 있습니다. 기존 PL 홈페이지 저장소 `plhomepage`는 수정하거나 디자인 참고 자료로 사용하지 않았습니다.
+운영 화면은 2026-10-17에 적용한 새 디자인입니다. 프로젝트 분류 재검토, 스튜디오 위치 지도, 은은한 건축 선화 배경을 반영했습니다. 이전 홈페이지는 별도 저장소 `makegroup-backup`의 GitHub Pages에 보관합니다. 개선안은 `preview/`에서도 확인할 수 있습니다. 기존 PL 홈페이지 저장소 `plhomepage`는 수정하거나 디자인 참고 자료로 사용하지 않았습니다.
 
 ## 개선안 적용 / 기존 화면 복원
 
@@ -45,6 +46,9 @@ https://github.com/makegroup3330/makegroup/actions/workflows/site-pages.yml
 ## 보관 / 배포 구조
 
 기존 화면 복원 기준 커밋: `d15f45567b7f9194fbad3fa70b8d6e498967dafc`.
+별도 백업 저장소: https://github.com/makegroup3330/makegroup-backup
+별도 백업 홈페이지: https://makegroup3330.github.io/makegroup-backup/
+백업은 원래 본문 43개 페이지와 471개 에셋을 보관합니다. 백업의 검색 중복 노출 방지를 위해 `noindex`를 적용했습니다.
 `_site_tools/original-ref.txt`에 복원 기준을 보관하며 Git 이력은 그대로 유지합니다. 별도 ZIP 백업도 로컬 전달 폴더에 보관되어 있습니다.
 
 Pages는 GitHub Actions로 게시합니다. `_site_tools/manage_site.py`가 화면 선택, 로컬 링크 검증, 게시 폴더 생성을 수행합니다. 설정 파일과 도구는 게시 폴더에서 제외합니다. 운영 원본 이미지와 미리보기 파일은 복원 후에도 보관합니다.
