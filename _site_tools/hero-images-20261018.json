@@ -1,0 +1,479 @@
+{
+  "version": "20261018",
+  "slides": [
+    {
+      "id": "city",
+      "alt": "인천 제물포 르네상스 전체 개발 계획 광역도",
+      "name": "인천 제물포 르네상스",
+      "href": "project-28.html",
+      "desktopFocus": [
+        0.5,
+        0.54
+      ],
+      "mobileFocus": [
+        0.52,
+        0.5
+      ],
+      "original": {
+        "file": "07. 2023-12-13 2346 광역도 - x4.jpg",
+        "width": 12000,
+        "height": 7500,
+        "bytes": 83756674,
+        "sha256": "8465398bddfb6a6c1e64d1b84d99e70a069ffc477aa862c7a42f56d69236c6d9",
+        "profile": "IEC 61966-2.1 Default RGB colour space - sRGB"
+      },
+      "desktop": {
+        "crop": [
+          0,
+          0,
+          12000,
+          7500
+        ],
+        "avif": [
+          {
+            "file": "city-desktop-1280.avif",
+            "width": 1280,
+            "height": 800,
+            "bytes": 210544,
+            "src": "assets/hero/20261018/city-desktop-1280.avif"
+          },
+          {
+            "file": "city-desktop-1920.avif",
+            "width": 1920,
+            "height": 1200,
+            "bytes": 460466,
+            "src": "assets/hero/20261018/city-desktop-1920.avif"
+          },
+          {
+            "file": "city-desktop-2560.avif",
+            "width": 2560,
+            "height": 1600,
+            "bytes": 794184,
+            "src": "assets/hero/20261018/city-desktop-2560.avif"
+          },
+          {
+            "file": "city-desktop-3840.avif",
+            "width": 3840,
+            "height": 2400,
+            "bytes": 1675007,
+            "src": "assets/hero/20261018/city-desktop-3840.avif"
+          }
+        ],
+        "webp": [
+          {
+            "file": "city-desktop-1280.webp",
+            "width": 1280,
+            "height": 800,
+            "bytes": 196818,
+            "src": "assets/hero/20261018/city-desktop-1280.webp"
+          },
+          {
+            "file": "city-desktop-1920.webp",
+            "width": 1920,
+            "height": 1200,
+            "bytes": 431198,
+            "src": "assets/hero/20261018/city-desktop-1920.webp"
+          },
+          {
+            "file": "city-desktop-2560.webp",
+            "width": 2560,
+            "height": 1600,
+            "bytes": 744532,
+            "src": "assets/hero/20261018/city-desktop-2560.webp"
+          },
+          {
+            "file": "city-desktop-3840.webp",
+            "width": 3840,
+            "height": 2400,
+            "bytes": 1582614,
+            "src": "assets/hero/20261018/city-desktop-3840.webp"
+          }
+        ]
+      },
+      "mobile": {
+        "crop": [
+          4130,
+          0,
+          8349,
+          7500
+        ],
+        "avif": [
+          {
+            "file": "city-mobile-480.avif",
+            "width": 480,
+            "height": 853,
+            "bytes": 101998,
+            "src": "assets/hero/20261018/city-mobile-480.avif"
+          },
+          {
+            "file": "city-mobile-720.avif",
+            "width": 720,
+            "height": 1280,
+            "bytes": 215358,
+            "src": "assets/hero/20261018/city-mobile-720.avif"
+          },
+          {
+            "file": "city-mobile-1080.avif",
+            "width": 1080,
+            "height": 1920,
+            "bytes": 454937,
+            "src": "assets/hero/20261018/city-mobile-1080.avif"
+          },
+          {
+            "file": "city-mobile-1440.avif",
+            "width": 1440,
+            "height": 2560,
+            "bytes": 764994,
+            "src": "assets/hero/20261018/city-mobile-1440.avif"
+          }
+        ],
+        "webp": [
+          {
+            "file": "city-mobile-480.webp",
+            "width": 480,
+            "height": 853,
+            "bytes": 148408,
+            "src": "assets/hero/20261018/city-mobile-480.webp"
+          },
+          {
+            "file": "city-mobile-720.webp",
+            "width": 720,
+            "height": 1280,
+            "bytes": 320518,
+            "src": "assets/hero/20261018/city-mobile-720.webp"
+          },
+          {
+            "file": "city-mobile-1080.webp",
+            "width": 1080,
+            "height": 1920,
+            "bytes": 680628,
+            "src": "assets/hero/20261018/city-mobile-1080.webp"
+          },
+          {
+            "file": "city-mobile-1440.webp",
+            "width": 1440,
+            "height": 2560,
+            "bytes": 742564,
+            "src": "assets/hero/20261018/city-mobile-1440.webp"
+          }
+        ]
+      }
+    },
+    {
+      "id": "residential",
+      "alt": "해안과 주거 타워를 담은 건축 시각화",
+      "name": "주거 건축 시각화",
+      "href": "architecture.html",
+      "desktopFocus": [
+        0.52,
+        0.6
+      ],
+      "mobileFocus": [
+        0.52,
+        0.5
+      ],
+      "original": {
+        "file": "2025-01-09 1741 광역도ups 25p.jpg",
+        "width": 4681,
+        "height": 5316,
+        "bytes": 17556408,
+        "sha256": "c89416d9e284e1000cb8e577e8a32ba5018f56b64813985a2d15ec6a2dd870af",
+        "profile": "IEC 61966-2.1 Default RGB colour space - sRGB"
+      },
+      "desktop": {
+        "crop": [
+          0,
+          1727,
+          4681,
+          4653
+        ],
+        "avif": [
+          {
+            "file": "residential-desktop-1280.avif",
+            "width": 1280,
+            "height": 800,
+            "bytes": 154252,
+            "src": "assets/hero/20261018/residential-desktop-1280.avif"
+          },
+          {
+            "file": "residential-desktop-1920.avif",
+            "width": 1920,
+            "height": 1200,
+            "bytes": 331194,
+            "src": "assets/hero/20261018/residential-desktop-1920.avif"
+          },
+          {
+            "file": "residential-desktop-2560.avif",
+            "width": 2560,
+            "height": 1600,
+            "bytes": 564833,
+            "src": "assets/hero/20261018/residential-desktop-2560.avif"
+          },
+          {
+            "file": "residential-desktop-3840.avif",
+            "width": 3840,
+            "height": 2400,
+            "bytes": 1140682,
+            "src": "assets/hero/20261018/residential-desktop-3840.avif"
+          }
+        ],
+        "webp": [
+          {
+            "file": "residential-desktop-1280.webp",
+            "width": 1280,
+            "height": 800,
+            "bytes": 145442,
+            "src": "assets/hero/20261018/residential-desktop-1280.webp"
+          },
+          {
+            "file": "residential-desktop-1920.webp",
+            "width": 1920,
+            "height": 1200,
+            "bytes": 311002,
+            "src": "assets/hero/20261018/residential-desktop-1920.webp"
+          },
+          {
+            "file": "residential-desktop-2560.webp",
+            "width": 2560,
+            "height": 1600,
+            "bytes": 534138,
+            "src": "assets/hero/20261018/residential-desktop-2560.webp"
+          },
+          {
+            "file": "residential-desktop-3840.webp",
+            "width": 3840,
+            "height": 2400,
+            "bytes": 1095814,
+            "src": "assets/hero/20261018/residential-desktop-3840.webp"
+          }
+        ]
+      },
+      "mobile": {
+        "crop": [
+          939,
+          0,
+          3929,
+          5316
+        ],
+        "avif": [
+          {
+            "file": "residential-mobile-480.avif",
+            "width": 480,
+            "height": 853,
+            "bytes": 53631,
+            "src": "assets/hero/20261018/residential-mobile-480.avif"
+          },
+          {
+            "file": "residential-mobile-720.avif",
+            "width": 720,
+            "height": 1280,
+            "bytes": 114248,
+            "src": "assets/hero/20261018/residential-mobile-720.avif"
+          },
+          {
+            "file": "residential-mobile-1080.avif",
+            "width": 1080,
+            "height": 1920,
+            "bytes": 248769,
+            "src": "assets/hero/20261018/residential-mobile-1080.avif"
+          },
+          {
+            "file": "residential-mobile-1440.avif",
+            "width": 1440,
+            "height": 2560,
+            "bytes": 425690,
+            "src": "assets/hero/20261018/residential-mobile-1440.avif"
+          }
+        ],
+        "webp": [
+          {
+            "file": "residential-mobile-480.webp",
+            "width": 480,
+            "height": 853,
+            "bytes": 78784,
+            "src": "assets/hero/20261018/residential-mobile-480.webp"
+          },
+          {
+            "file": "residential-mobile-720.webp",
+            "width": 720,
+            "height": 1280,
+            "bytes": 169586,
+            "src": "assets/hero/20261018/residential-mobile-720.webp"
+          },
+          {
+            "file": "residential-mobile-1080.webp",
+            "width": 1080,
+            "height": 1920,
+            "bytes": 366136,
+            "src": "assets/hero/20261018/residential-mobile-1080.webp"
+          },
+          {
+            "file": "residential-mobile-1440.webp",
+            "width": 1440,
+            "height": 2560,
+            "bytes": 397998,
+            "src": "assets/hero/20261018/residential-mobile-1440.webp"
+          }
+        ]
+      }
+    },
+    {
+      "id": "interior",
+      "alt": "관제실의 공간과 설비를 표현한 실내 시각화",
+      "name": "인테리어 시각화",
+      "href": "architecture.html",
+      "desktopFocus": [
+        0.5,
+        0.55
+      ],
+      "mobileFocus": [
+        0.45,
+        0.5
+      ],
+      "original": {
+        "file": "cam 002 a타입.effectsResult.jpg",
+        "width": 3500,
+        "height": 2625,
+        "bytes": 5379043,
+        "sha256": "fed4a2cd749674d823bea8d75c90ad3815fd658a916f92f5f8367fca1be23a99",
+        "profile": "IEC 61966-2.1 Default RGB colour space - sRGB"
+      },
+      "desktop": {
+        "crop": [
+          0,
+          350,
+          3500,
+          2538
+        ],
+        "avif": [
+          {
+            "file": "interior-desktop-1280.avif",
+            "width": 1280,
+            "height": 800,
+            "bytes": 96351,
+            "src": "assets/hero/20261018/interior-desktop-1280.avif"
+          },
+          {
+            "file": "interior-desktop-1920.avif",
+            "width": 1920,
+            "height": 1200,
+            "bytes": 197246,
+            "src": "assets/hero/20261018/interior-desktop-1920.avif"
+          },
+          {
+            "file": "interior-desktop-2560.avif",
+            "width": 2560,
+            "height": 1600,
+            "bytes": 322209,
+            "src": "assets/hero/20261018/interior-desktop-2560.avif"
+          },
+          {
+            "file": "interior-desktop-3500.avif",
+            "width": 3500,
+            "height": 2188,
+            "bytes": 561103,
+            "src": "assets/hero/20261018/interior-desktop-3500.avif"
+          }
+        ],
+        "webp": [
+          {
+            "file": "interior-desktop-1280.webp",
+            "width": 1280,
+            "height": 800,
+            "bytes": 85544,
+            "src": "assets/hero/20261018/interior-desktop-1280.webp"
+          },
+          {
+            "file": "interior-desktop-1920.webp",
+            "width": 1920,
+            "height": 1200,
+            "bytes": 168638,
+            "src": "assets/hero/20261018/interior-desktop-1920.webp"
+          },
+          {
+            "file": "interior-desktop-2560.webp",
+            "width": 2560,
+            "height": 1600,
+            "bytes": 275304,
+            "src": "assets/hero/20261018/interior-desktop-2560.webp"
+          },
+          {
+            "file": "interior-desktop-3500.webp",
+            "width": 3500,
+            "height": 2188,
+            "bytes": 469114,
+            "src": "assets/hero/20261018/interior-desktop-3500.webp"
+          }
+        ]
+      },
+      "mobile": {
+        "crop": [
+          836,
+          0,
+          2313,
+          2625
+        ],
+        "avif": [
+          {
+            "file": "interior-mobile-480.avif",
+            "width": 480,
+            "height": 853,
+            "bytes": 51790,
+            "src": "assets/hero/20261018/interior-mobile-480.avif"
+          },
+          {
+            "file": "interior-mobile-720.avif",
+            "width": 720,
+            "height": 1280,
+            "bytes": 111159,
+            "src": "assets/hero/20261018/interior-mobile-720.avif"
+          },
+          {
+            "file": "interior-mobile-1080.avif",
+            "width": 1080,
+            "height": 1920,
+            "bytes": 232750,
+            "src": "assets/hero/20261018/interior-mobile-1080.avif"
+          },
+          {
+            "file": "interior-mobile-1440.avif",
+            "width": 1440,
+            "height": 2560,
+            "bytes": 382737,
+            "src": "assets/hero/20261018/interior-mobile-1440.avif"
+          }
+        ],
+        "webp": [
+          {
+            "file": "interior-mobile-480.webp",
+            "width": 480,
+            "height": 853,
+            "bytes": 78780,
+            "src": "assets/hero/20261018/interior-mobile-480.webp"
+          },
+          {
+            "file": "interior-mobile-720.webp",
+            "width": 720,
+            "height": 1280,
+            "bytes": 181742,
+            "src": "assets/hero/20261018/interior-mobile-720.webp"
+          },
+          {
+            "file": "interior-mobile-1080.webp",
+            "width": 1080,
+            "height": 1920,
+            "bytes": 242614,
+            "src": "assets/hero/20261018/interior-mobile-1080.webp"
+          },
+          {
+            "file": "interior-mobile-1440.webp",
+            "width": 1440,
+            "height": 2560,
+            "bytes": 376142,
+            "src": "assets/hero/20261018/interior-mobile-1440.webp"
+          }
+        ]
+      }
+    }
+  ]
+}
