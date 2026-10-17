@@ -1,0 +1,21 @@
+{
+  "source": "assets/wix/148.png",
+  "original_url": "https://static.wixstatic.com/media/322b7e_a3c15bd5d21145ebb74ac523b989c984%7Emv2.png",
+  "sha256": "02a7eab7710cc265b1da0fc17ee6c867f67a2e8d89c7fa1ac2d9c256634c794d",
+  "source_dimensions": [
+    204,
+    236
+  ],
+  "source_alpha_bbox": [
+    24,
+    28,
+    180,
+    208
+  ],
+  "canvas_dimensions": [
+    192,
+    192
+  ],
+  "transformation": "Unchanged original symbol centered on square transparent canvas; resize only for browser icons; white background for Apple touch icon.",
+  "updated_pages": 88
+}
