@@ -1,3 +1,4 @@
 User-agent: *
+Disallow: /preview/
 Allow: /
 Sitemap: https://makegroup.co.kr/sitemap.xml
