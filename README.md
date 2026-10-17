@@ -58,7 +58,7 @@ https://github.com/makegroup3330/makegroup/actions/workflows/site-pages.yml
 - 이름/회사명, 회신 이메일, 문의 내용을 전송합니다. 방문자에게 외부 전송 서비스 이용 사실을 표시합니다.
 - FormSubmit 기본 보안 확인(reCAPTCHA)을 유지합니다. 추가 숨김 스팸 필드를 사용합니다.
 - JavaScript가 없어도 전송할 수 있고, 필수 입력/이메일 형식 검사와 중복 클릭 방지를 제공합니다. 서비스 오류 시 뒤로 돌아오면 입력 내용을 유지하고 다시 전송할 수 있습니다.
-- 개발 주소 인증과 별개로 실제 `makegroup.co.kr/preview/contact.html`에서 인증을 요청했고, 2026-10-18 사용자가 **makegroup.co.kr 인증 완료**를 확인했습니다. 인증 후 재전송은 **Almost There** 보안 확인 화면으로 진행되었습니다. 최종 테스트 메일 수신 확인은 진행 중입니다.
+- 개발 주소 인증과 별개로 실제 `makegroup.co.kr/preview/contact.html`에서 인증을 요청했고, 2026-10-18 사용자가 **makegroup.co.kr 인증 완료**를 확인했습니다. 인증 후 재전송은 **Almost There** 보안 확인 화면으로 진행되었습니다. 이어 사용자가 보안 확인을 완료했으며 서비스의 **Thanks! / The form was submitted successfully** 응답을 확인했습니다. 사용자가 확인 코드 `MAKE-MAIL-20261018` 테스트 문의의 네이버 메일 수신도 확인했습니다.
 - 로컬 주소 `127.0.0.1:4177`은 개발 검사에만 사용했습니다. 운영 양식은 GitHub Pages에서 제공되고 외부 전송 서비스로 POST하므로 개발 서버 실행 여부와 관계없이 작동합니다. 수신 주소나 사이트 도메인을 바꾸면 해당 주소의 인증을 다시 확인합니다.
 - 직접 이메일 링크와 전화 문의도 유지합니다. 첨부파일, 자동 회신, 문의 저장함은 이번 기능에 포함하지 않습니다.
 - 서비스 안내: https://formsubmit.co/documentation / https://formsubmit.co/help
