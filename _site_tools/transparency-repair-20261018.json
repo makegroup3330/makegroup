@@ -1,0 +1,357 @@
+{
+  "version": "20261018-alpha",
+  "cause": "RGB-only conversion discarded source alpha and exposed hidden background pixels.",
+  "repair": "Preserve original alpha in WebP; artwork and source PNG files are unchanged.",
+  "sources": [
+    {
+      "source": "assets/wix/028.png",
+      "source_sha256": "4928d96e6769dc6901a1494ef93a90b8aafce06ff1a9c7984ce7ad8571972f04",
+      "source_size": [
+        1300,
+        975
+      ],
+      "variants": [
+        {
+          "path": "assets/optimized/028-640.webp",
+          "size": [
+            640,
+            480
+          ],
+          "bytes": 38242,
+          "alpha_mask_exact": true
+        },
+        {
+          "path": "assets/optimized/028-1600.webp",
+          "size": [
+            1300,
+            975
+          ],
+          "bytes": 82094,
+          "alpha_mask_exact": true
+        }
+      ]
+    },
+    {
+      "source": "assets/wix/154.png",
+      "source_sha256": "bddf3c0f283ff3eb0950a102d8c2ddbf488aeadf0a852235ef5d22eeacd80ba3",
+      "source_size": [
+        1300,
+        975
+      ],
+      "variants": [
+        {
+          "path": "assets/optimized/154-640.webp",
+          "size": [
+            640,
+            480
+          ],
+          "bytes": 30094,
+          "alpha_mask_exact": true
+        },
+        {
+          "path": "assets/optimized/154-1600.webp",
+          "size": [
+            1300,
+            975
+          ],
+          "bytes": 75144,
+          "alpha_mask_exact": true
+        }
+      ]
+    },
+    {
+      "source": "assets/wix/230.png",
+      "source_sha256": "d1f3db891bfbe61fb0e38e890ebc9486aefd21f3db3be0208b76bc7bb143751a",
+      "source_size": [
+        1300,
+        975
+      ],
+      "variants": [
+        {
+          "path": "assets/optimized/230-640.webp",
+          "size": [
+            640,
+            480
+          ],
+          "bytes": 31196,
+          "alpha_mask_exact": true
+        },
+        {
+          "path": "assets/optimized/230-1600.webp",
+          "size": [
+            1300,
+            975
+          ],
+          "bytes": 74092,
+          "alpha_mask_exact": true
+        }
+      ]
+    },
+    {
+      "source": "assets/wix/231.png",
+      "source_sha256": "a34db70ce728376e800029d7b1c2faf3ed45a6d9757937df97bd6f484712c09f",
+      "source_size": [
+        1300,
+        975
+      ],
+      "variants": [
+        {
+          "path": "assets/optimized/231-640.webp",
+          "size": [
+            640,
+            480
+          ],
+          "bytes": 25008,
+          "alpha_mask_exact": true
+        },
+        {
+          "path": "assets/optimized/231-1600.webp",
+          "size": [
+            1300,
+            975
+          ],
+          "bytes": 60086,
+          "alpha_mask_exact": true
+        }
+      ]
+    },
+    {
+      "source": "assets/wix/232.png",
+      "source_sha256": "2284ecb307ff2ad681a514a471cb58637ccd5beb0aa783321f025eac4c52a609",
+      "source_size": [
+        1300,
+        975
+      ],
+      "variants": [
+        {
+          "path": "assets/optimized/232-640.webp",
+          "size": [
+            640,
+            480
+          ],
+          "bytes": 33120,
+          "alpha_mask_exact": true
+        },
+        {
+          "path": "assets/optimized/232-1600.webp",
+          "size": [
+            1300,
+            975
+          ],
+          "bytes": 81518,
+          "alpha_mask_exact": true
+        }
+      ]
+    },
+    {
+      "source": "assets/wix/233.png",
+      "source_sha256": "9170ccd4f60c2c33e147cfc520a77e2f26a14a367d2899abc94460040b84a742",
+      "source_size": [
+        1300,
+        975
+      ],
+      "variants": [
+        {
+          "path": "assets/optimized/233-640.webp",
+          "size": [
+            640,
+            480
+          ],
+          "bytes": 34214,
+          "alpha_mask_exact": true
+        },
+        {
+          "path": "assets/optimized/233-1600.webp",
+          "size": [
+            1300,
+            975
+          ],
+          "bytes": 85386,
+          "alpha_mask_exact": true
+        }
+      ]
+    },
+    {
+      "source": "assets/wix/234.png",
+      "source_sha256": "ffb38c82b535fa6ce26939e2b435f593fadbd64eaee8525d1ab3ea55671dfd68",
+      "source_size": [
+        1300,
+        975
+      ],
+      "variants": [
+        {
+          "path": "assets/optimized/234-640.webp",
+          "size": [
+            640,
+            480
+          ],
+          "bytes": 32756,
+          "alpha_mask_exact": true
+        },
+        {
+          "path": "assets/optimized/234-1600.webp",
+          "size": [
+            1300,
+            975
+          ],
+          "bytes": 80294,
+          "alpha_mask_exact": true
+        }
+      ]
+    },
+    {
+      "source": "assets/wix/235.png",
+      "source_sha256": "b46208f65b1821696917dfc37f7fd1fedc4a447c1fa50378cf2684823e5a4410",
+      "source_size": [
+        1300,
+        975
+      ],
+      "variants": [
+        {
+          "path": "assets/optimized/235-640.webp",
+          "size": [
+            640,
+            480
+          ],
+          "bytes": 29892,
+          "alpha_mask_exact": true
+        },
+        {
+          "path": "assets/optimized/235-1600.webp",
+          "size": [
+            1300,
+            975
+          ],
+          "bytes": 73304,
+          "alpha_mask_exact": true
+        }
+      ]
+    },
+    {
+      "source": "assets/wix/236.png",
+      "source_sha256": "7352b943aa591c24875fef8bf78a28bee5cc825ef0478986c641b663add92393",
+      "source_size": [
+        1300,
+        975
+      ],
+      "variants": [
+        {
+          "path": "assets/optimized/236-640.webp",
+          "size": [
+            640,
+            480
+          ],
+          "bytes": 30484,
+          "alpha_mask_exact": true
+        },
+        {
+          "path": "assets/optimized/236-1600.webp",
+          "size": [
+            1300,
+            975
+          ],
+          "bytes": 77058,
+          "alpha_mask_exact": true
+        }
+      ]
+    },
+    {
+      "source": "assets/wix/237.png",
+      "source_sha256": "9b3ffaefe370b01f75a04c5eb712c35dc6551c01a7892d9ae85aaa81b035c1ee",
+      "source_size": [
+        1300,
+        975
+      ],
+      "variants": [
+        {
+          "path": "assets/optimized/237-640.webp",
+          "size": [
+            640,
+            480
+          ],
+          "bytes": 28628,
+          "alpha_mask_exact": true
+        },
+        {
+          "path": "assets/optimized/237-1600.webp",
+          "size": [
+            1300,
+            975
+          ],
+          "bytes": 67028,
+          "alpha_mask_exact": true
+        }
+      ]
+    },
+    {
+      "source": "assets/wix/238.png",
+      "source_sha256": "5c78da53f0fac3fe8d6f7c7c732ace1881a28a0a4da48b12652f1303ce2758b9",
+      "source_size": [
+        1300,
+        975
+      ],
+      "variants": [
+        {
+          "path": "assets/optimized/238-640.webp",
+          "size": [
+            640,
+            480
+          ],
+          "bytes": 28754,
+          "alpha_mask_exact": true
+        },
+        {
+          "path": "assets/optimized/238-1600.webp",
+          "size": [
+            1300,
+            975
+          ],
+          "bytes": 70006,
+          "alpha_mask_exact": true
+        }
+      ]
+    }
+  ],
+  "pages": [
+    {
+      "page": "architecture.html",
+      "updated_references": 4
+    },
+    {
+      "page": "project-23.html",
+      "updated_references": 31
+    },
+    {
+      "page": "project-51.html",
+      "updated_references": 3
+    },
+    {
+      "page": "project-53.html",
+      "updated_references": 3
+    },
+    {
+      "page": "projects.html",
+      "updated_references": 3
+    },
+    {
+      "page": "preview\\architecture.html",
+      "updated_references": 4
+    },
+    {
+      "page": "preview\\project-23.html",
+      "updated_references": 31
+    },
+    {
+      "page": "preview\\project-51.html",
+      "updated_references": 3
+    },
+    {
+      "page": "preview\\project-53.html",
+      "updated_references": 3
+    },
+    {
+      "page": "preview\\projects.html",
+      "updated_references": 3
+    }
+  ]
+}

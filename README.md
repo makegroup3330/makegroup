@@ -45,6 +45,12 @@ https://github.com/makegroup3330/makegroup/actions/workflows/site-pages.yml
 
 사진별 크기·용량·크롭 위치·원본 해시는 `_site_tools/hero-images-20261018.json`에 기록합니다. 기존 프로젝트 대표 이미지와 별도 백업 홈페이지는 유지합니다.
 
+## 투명 배경 이미지 복구 — 2026-10-18
+
+투명 PNG를 RGB로 변환하면서 숨겨진 픽셀이 회색 줄무늬로 보이던 오류를 수정했습니다. 원본 HTML의 이미지 경로를 대조해 해당 PNG 11장과 PC·모바일 WebP를 다시 생성했습니다. 작품 선택과 원본 PNG는 유지하고 투명도를 보존했습니다. 운영·미리보기의 이미지 주소에는 새 버전을 표시했습니다.
+
+`_site_tools/image_assets.py`가 알파 채널을 보존해 변환합니다. `test_image_assets.py`에서 투명 배경·반투명·팔레트 PNG·일반 사진을 검증합니다. 복구 원본과 파생 파일 검증 결과는 `transparency-repair-20261018.json`에 기록했습니다.
+
 ## 검색 노출 / 문의
 
 미리보기 페이지에는 `noindex`를 넣고 `robots.txt`에서 `/preview/`를 제외했습니다. 개선안을 운영 화면으로 적용하면 본문 페이지의 검색 허용 설정, 운영 도메인의 canonical과 사이트맵을 함께 적용합니다.
