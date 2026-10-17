@@ -48,7 +48,7 @@ def repair():
             new, count = pattern.subn(r'\1?v=' + VERSION, old)
             if count:
                 page.write_text(new, encoding='utf-8')
-                changed.append({'page': str(page.relative_to(ROOT)), 'updated_references': count})
+                changed.append({'page': page.relative_to(ROOT).as_posix(), 'updated_references': count})
     report = {'version': VERSION, 'cause': 'RGB-only conversion discarded source alpha and exposed hidden background pixels.',
               'repair': 'Preserve original alpha in WebP; artwork and source PNG files are unchanged.',
               'sources': records, 'pages': changed}
