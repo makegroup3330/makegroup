@@ -1,0 +1,4 @@
+/* Keep the anti-spam field out of the visible form and keyboard flow. */
+#inquiry-form .form-honey { display: none; }
+#inquiry-form button:disabled { opacity: .65; cursor: wait; }
+#form-status { min-height: 1.6em; line-height: 1.6; }
