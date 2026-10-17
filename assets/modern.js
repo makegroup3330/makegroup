@@ -12,4 +12,3 @@ document.querySelectorAll('[data-image]').forEach(button=>button.addEventListene
 viewer?.querySelector('.close-viewer').addEventListener('click',()=>viewer.close());
 viewer?.addEventListener('click',event=>{if(event.target===viewer)viewer.close();});
 viewer?.addEventListener('close',()=>origin?.focus());
-document.querySelector('#inquiry-form')?.addEventListener('submit',event=>{event.preventDefault();const data=new FormData(event.currentTarget);const body='이름 / 회사명: '+data.get('name')+'\n이메일: '+data.get('email')+'\n\n프로젝트 내용:\n'+data.get('message');location.href='mailto:Makegroupcg@naver.com?subject='+encodeURIComponent('MAKE GROUP 프로젝트 문의 — '+data.get('name'))+'&body='+encodeURIComponent(body);document.querySelector('#form-status').textContent='이메일 앱에서 직접 전송해 주세요. 앱이 열리지 않으면 Makegroupcg@naver.com으로 문의해 주세요.';});

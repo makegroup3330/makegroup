@@ -49,17 +49,17 @@ https://github.com/makegroup3330/makegroup/actions/workflows/site-pages.yml
 
 미리보기 페이지에는 `noindex`를 넣고 `robots.txt`에서 `/preview/`를 제외했습니다. 개선안을 운영 화면으로 적용하면 본문 페이지의 검색 허용 설정, 운영 도메인의 canonical과 사이트맵을 함께 적용합니다.
 
-운영 홈페이지의 문의 버튼은 현재 이메일 앱을 엽니다. `preview/contact.html`에는 FormSubmit을 이용한 직접 전송 양식을 준비했습니다. 수신 주소 인증이 끝나고 실제 접수를 확인한 뒤 운영 화면으로 전환합니다.
+운영 홈페이지와 미리보기의 프로젝트 문의 양식은 FormSubmit으로 직접 전송합니다. 수신 주소는 `Makegroupcg@naver.com`입니다. 방문자는 전송 후 스팸 방지 보안 확인을 완료해야 합니다. 이메일 주소 링크를 누르면 기존처럼 이메일 앱에서 작성할 수도 있습니다.
 
-### 문의 메일 연결 준비 — 2026-10-18
+### 문의 메일 전송 — 2026-10-18
 
 - 수신 주소: `Makegroupcg@naver.com`
 - 전송 방식: `https://formsubmit.co/Makegroupcg@naver.com`으로 HTML POST. 이메일 앱이나 비밀 API 키가 필요 없습니다.
 - 이름/회사명, 회신 이메일, 문의 내용을 전송합니다. 방문자에게 외부 전송 서비스 이용 사실을 표시합니다.
 - FormSubmit 기본 보안 확인(reCAPTCHA)을 유지합니다. 추가 숨김 스팸 필드를 사용합니다.
 - JavaScript가 없어도 전송할 수 있고, 필수 입력/이메일 형식 검사와 중복 클릭 방지를 제공합니다. 서비스 오류 시 뒤로 돌아오면 입력 내용을 유지하고 다시 전송할 수 있습니다.
-- 2026-10-18 실제 브라우저 POST에서 **Check Your Email / This form needs Activation** 응답을 확인했습니다. 서비스가 인증 메일 발송을 안내했으나 받은편지함 수신과 인증 완료는 아직 확인하지 않았습니다.
-- 수신 주소 소유자가 FormSubmit 인증 메일의 **Activate Form**을 눌러야 합니다. 스팸함도 확인합니다. 로컬 준비된 운영 페이지를 게시한 다음 실제 테스트 접수까지 확인해야 연결 완료입니다.
+- 개발 주소 인증과 별개로 실제 `makegroup.co.kr/preview/contact.html`에서 인증을 요청했고, 2026-10-18 사용자가 **makegroup.co.kr 인증 완료**를 확인했습니다. 인증 후 재전송은 **Almost There** 보안 확인 화면으로 진행되었습니다. 최종 테스트 메일 수신 확인은 진행 중입니다.
+- 로컬 주소 `127.0.0.1:4177`은 개발 검사에만 사용했습니다. 운영 양식은 GitHub Pages에서 제공되고 외부 전송 서비스로 POST하므로 개발 서버 실행 여부와 관계없이 작동합니다. 수신 주소나 사이트 도메인을 바꾸면 해당 주소의 인증을 다시 확인합니다.
 - 직접 이메일 링크와 전화 문의도 유지합니다. 첨부파일, 자동 회신, 문의 저장함은 이번 기능에 포함하지 않습니다.
 - 서비스 안내: https://formsubmit.co/documentation / https://formsubmit.co/help
 
