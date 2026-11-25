@@ -73,6 +73,17 @@ Wix 서버의 댓글·조회수·로그인·결제 처리는 포함되지 않습
 
 ## 보관 / 배포 구조
 
+### 문의 완료 전환 측정 수정본 — 2026-11-25
+
+- 운영 페이지 43개가 공통으로 사용하는 `assets/agency.js`에서 Google Ads 태그 `AW-828540777`를 초기화합니다. 로컬 및 `/preview/`에서는 측정하지 않습니다.
+- 기존 수신 주소, HTML POST, 필수 입력 및 FormSubmit 보안 확인을 유지합니다. `_next`는 보안 확인 후 `inquiry-complete.html`로 돌아오게 합니다. 공식 설정 안내: https://formsubmit.co/documentation#next
+- 전송 시 같은 탭의 sessionStorage에 개인정보가 없는 임의 ID·시각만 남깁니다. 2시간 이내 일치하는 완료 복귀에서만 기존 `목표 문의` 액션으로 전환을 1회 전송합니다. Google Ads의 `transaction_id`로도 중복 집계를 방지합니다.
+- 직접 완료 페이지 방문, 재방문/새로고침, 입력 오류, 보안 확인 취소, 미리보기는 전환으로 세지 않습니다. 브라우저가 저장소를 차단하면 문의 전송은 유지하고 전환은 보내지 않습니다. JavaScript 없이도 문의 전송은 가능합니다.
+- 이 방식은 FormSubmit의 완료 복귀를 측정합니다. 실제 수신함 도착을 독립적으로 확인하거나, 서버가 서명한 접수 증명을 검증하는 방식은 아닙니다. 클라이언트 조작까지 방지하는 서버 기반 전환은 포함하지 않습니다.
+- 검증: `node --test _site_tools/test_inquiry_conversion.cjs`. 외부 전송과 실제 광고 전환을 발생시키지 않는 테스트입니다.
+- 운영 반영 후에는 테스트 문의 보안 확인 → 완료 복귀 → 수신함 도착 → 태그 수신을 별도로 확인해야 합니다. 반영 전에는 Google Ads의 추적 설정 완료로 간주하지 않습니다.
+- 이 변경은 운영 파일에 적용됩니다. 추후 `apply_design`이나 `restore_original`로 화면을 덮어쓰면 문의·측정 파일도 함께 확인해야 합니다.
+
 기존 화면 복원 기준 커밋: `d15f45567b7f9194fbad3fa70b8d6e498967dafc`.
 별도 백업 저장소: https://github.com/makegroup3330/makegroup-backup
 별도 백업 홈페이지: https://makegroup3330.github.io/makegroup-backup/
