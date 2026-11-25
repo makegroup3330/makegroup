@@ -1,18 +1,3 @@
 const art=document.querySelector('.hero-art');
-// Shared by the live website pages. Preview and local checks never send data.
-(() => {
-  if (!['makegroup.co.kr', 'www.makegroup.co.kr'].includes(window.location.hostname)
-      || window.location.pathname.startsWith('/preview/')
-      || window.__makegroupAdsTagReady) return;
-  window.__makegroupAdsTagReady = true;
-  window.dataLayer = window.dataLayer || [];
-  window.gtag = window.gtag || function () { window.dataLayer.push(arguments); };
-  window.gtag('js', new Date());
-  window.gtag('config', 'AW-828540777');
-  const tag = document.createElement('script');
-  tag.async = true;
-  tag.src = 'https://www.googletagmanager.com/gtag/js?id=AW-828540777';
-  document.head.appendChild(tag);
-})();
 const heroSlides=[{src:'assets/optimized/013',alt:'인천 제물포 르네상스 전체 개발 계획 광역도',name:'인천 제물포 르네상스',href:'project-28.html'},{src:'assets/optimized/007',alt:'도시와 수변 경관을 담은 주거 건축 조감도',name:'주거 건축 시각화',href:'architecture.html'},{src:'assets/optimized/026',alt:'빛과 재료를 표현한 오피스 인테리어 시각화',name:'인테리어 시각화',href:'architecture.html'}];
 document.querySelectorAll('[data-slide]').forEach(button=>button.addEventListener('click',()=>{const i=Number(button.dataset.slide),slide=heroSlides[i];art.srcset=slide.src+'-640.webp 640w, '+slide.src+'-1600.webp 1600w';art.src=slide.src+'-1600.webp';art.alt=slide.alt;document.querySelector('#hero-number').textContent=String(i+1).padStart(2,'0');document.querySelector('#hero-name').textContent=slide.name;const link=document.querySelector('.hero-explore');link.href=slide.href;link.setAttribute('aria-label',slide.name+' 프로젝트 보기');document.querySelectorAll('[data-slide]').forEach(b=>b.setAttribute('aria-pressed',String(b===button)));}));
