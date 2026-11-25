@@ -62,7 +62,7 @@ function browser({ hostname = 'makegroup.co.kr', pathname = '/contact.html', den
   const returnFromProvider = () => {
     const url = new URL(fields.next.value);
     location.pathname = url.pathname; location.hash = url.hash;
-    run('agency.js'); run('inquiry-conversion.js');
+    run('ads-measurement.js'); run('inquiry-conversion.js');
   };
   const conversions = () => Array.from(window.dataLayer ?? [])
     .map(args => Array.from(args)).filter(args => args[0] === 'event');
@@ -126,7 +126,7 @@ test('storage failures preserve the native submission without counting a lead', 
 
 test('direct receipt visits never convert', () => {
   const b = browser({ pathname: '/inquiry-complete.html' });
-  b.run('agency.js'); b.run('inquiry-conversion.js');
+  b.run('ads-measurement.js'); b.run('inquiry-conversion.js');
   assert.equal(b.conversions().length, 0);
   assert.equal(b.fields.title.textContent, '문의 접수 안내');
 });
@@ -146,12 +146,12 @@ for (const invalid of ['expired', 'future', 'mismatched', 'malformed', 'preview'
 }
 
 test('Google tag is initialized once without changing inquiry form behaviour', () => {
-  const b = browser(); b.run('agency.js');
+  const b = browser(); b.run('ads-measurement.js');
   assert.equal(b.scripts.length, 1);
   assert.equal(b.scripts[0].src, 'https://www.googletagmanager.com/gtag/js?id=AW-828540777');
   const initial = b.window.dataLayer.length;
   // A second page-script execution in a separate lexical scope exercises its guard.
-  vm.runInNewContext('{\n' + source('agency.js') + '\n}', { window: b.window,
+  vm.runInNewContext('{\n' + source('ads-measurement.js') + '\n}', { window: b.window,
     document: { querySelector: () => null, querySelectorAll: () => [],
       createElement: () => ({}), head: { appendChild: script => b.scripts.push(script) } }, Date });
   assert.equal(b.scripts.length, 1); assert.equal(b.window.dataLayer.length, initial);
@@ -160,7 +160,7 @@ test('Google tag is initialized once without changing inquiry form behaviour', (
 
 for (const options of [{ hostname: 'localhost' }, { pathname: '/preview/contact.html' }]) {
   test('local and preview traffic never loads Ads measurement: ' + JSON.stringify(options), () => {
-    const b = browser(options); b.run('agency.js'); b.run('contact-form.js'); b.submit();
+    const b = browser(options); b.run('ads-measurement.js'); b.run('contact-form.js'); b.submit();
     assert.equal(b.scripts.length, 0); assert.equal(b.store.has(key), false);
   });
 }
@@ -180,4 +180,20 @@ test('native form keeps its receiver, validation, honeypot and CAPTCHA', () => {
   assert.doesNotMatch(html, /name="_captcha"[^>]*value="false"/);
   assert.match(html, /name="email" required="" type="email"/);
   assert.match(html, /<textarea[^>]*name="message"[^>]*required/);
+});
+
+test('all 43 existing public content pages include the standalone measurement tag', () => {
+  const pages = fs.readdirSync(root).filter(name => name.endsWith('.html') &&
+    !['404.html', 'inquiry-complete.html'].includes(name));
+  assert.equal(pages.length, 43);
+  for (const name of pages) {
+    const html = fs.readFileSync(path.join(root, name), 'utf8');
+    assert.equal((html.match(/src="assets\/ads-measurement\.js\?v=20261126"/g) ?? []).length, 1, name);
+  }
+});
+
+test('receipt initializes measurement before sending a completed inquiry event', () => {
+  const html = fs.readFileSync(path.join(root, 'inquiry-complete.html'), 'utf8');
+  assert.match(html, /<meta name="robots" content="noindex,nofollow"/);
+  assert.ok(html.indexOf('assets/ads-measurement.js') < html.indexOf('assets/inquiry-conversion.js'));
 });

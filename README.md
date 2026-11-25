@@ -75,7 +75,7 @@ Wix 서버의 댓글·조회수·로그인·결제 처리는 포함되지 않습
 
 ### 문의 완료 전환 측정 수정본 — 2026-11-25
 
-- 운영 페이지 43개가 공통으로 사용하는 `assets/agency.js`에서 Google Ads 태그 `AW-828540777`를 초기화합니다. 로컬 및 `/preview/`에서는 측정하지 않습니다.
+- 운영 페이지 43개에 별도로 연결한 `assets/ads-measurement.js`에서 Google Ads 태그 `AW-828540777`를 초기화합니다. 로컬 및 `/preview/`에서는 측정하지 않습니다.
 - 기존 수신 주소, HTML POST, 필수 입력 및 FormSubmit 보안 확인을 유지합니다. `_next`는 보안 확인 후 `inquiry-complete.html`로 돌아오게 합니다. 공식 설정 안내: https://formsubmit.co/documentation#next
 - 전송 시 같은 탭의 sessionStorage에 개인정보가 없는 임의 ID·시각만 남깁니다. 2시간 이내 일치하는 완료 복귀에서만 기존 `목표 문의` 액션으로 전환을 1회 전송합니다. Google Ads의 `transaction_id`로도 중복 집계를 방지합니다.
 - 직접 완료 페이지 방문, 재방문/새로고침, 입력 오류, 보안 확인 취소, 미리보기는 전환으로 세지 않습니다. 브라우저가 저장소를 차단하면 문의 전송은 유지하고 전환은 보내지 않습니다. JavaScript 없이도 문의 전송은 가능합니다.
