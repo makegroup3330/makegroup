@@ -25,11 +25,17 @@
       { ...window.history.state, makegroupInquiryComplete: true }, '', location.pathname
     );
     showComplete();
-    if (typeof window.gtag !== 'function') return;
-    window.gtag('event', 'conversion', {
-      send_to: 'AW-828540777/WuxBCMHz360ZEOmOiosD',
-      transaction_id: pending.id
+    // Count a Naver lead only after the same verified FormSubmit return.
+    Promise.resolve(window.makegroupNaverReady).then(ready => {
+      if (!ready || !window.wcs || typeof window.wcs.trans !== 'function') return;
+      window.wcs.trans({ type: 'lead' });
     });
+    if (typeof window.gtag === 'function') {
+      window.gtag('event', 'conversion', {
+        send_to: 'AW-828540777/WuxBCMHz360ZEOmOiosD',
+        transaction_id: pending.id
+      });
+    }
   } catch (_) {
     // Blocked storage must not break the receipt or generate an unverified lead.
   }
