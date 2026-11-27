@@ -25,6 +25,8 @@
       { ...window.history.state, makegroupInquiryComplete: true }, '', location.pathname
     );
     showComplete();
+    // Fire Meta Lead only after the verified FormSubmit return; never send form fields.
+    if (typeof window.fbq === 'function') window.fbq('track', 'Lead');
     // Count a Naver lead only after the same verified FormSubmit return.
     Promise.resolve(window.makegroupNaverReady).then(ready => {
       if (!ready || !window.wcs || typeof window.wcs.trans !== 'function') return;
